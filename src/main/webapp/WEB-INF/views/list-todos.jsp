@@ -4,6 +4,7 @@
 
 <div class="container">
 	<H1>Welcome ${name} to SpringOne 2018</H1>
+<c:set var="context" value="${pageContext.request.contextPath}" />
 
 
 	<table class="table table-striped">
@@ -22,9 +23,9 @@
 					<td>${todo.category}</td>
 					<td>${todo.eventTime}</td>
 					<td>&nbsp;&nbsp;<a class="btn btn-danger"
-						href="/delete-todo.do?todo=${todo.name}&category=${todo.category}">Delete</a></td>
+						href="${context}/delete-todo.do?todo=${todo.name}&category=${todo.category}">Delete</a></td>
 					<td>&nbsp;&nbsp;<a class="btn btn-primary"
-						href="/add-booking.do?eventName=${todo.name}">Register</a></td>
+						href="${context}/add-booking.do?eventName=${todo.name}">Register</a></td>
 				</tr>
 				
 				
@@ -35,7 +36,7 @@
 	<p>
 		<font color="red">${errorMessage}</font>
 	</p>
-	<a class="btn btn-success" href="/add-todo.do">Add New Event</a>
+	<a class="btn btn-success" href="${context}/add-todo.do">Add New Event</a>
 </div>
 
 <%@ include file="../common/footer.jspf"%>

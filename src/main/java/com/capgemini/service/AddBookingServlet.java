@@ -36,7 +36,8 @@ public class AddBookingServlet extends HttpServlet{
 		}
 		service.addBooking(new Booking(name, event));
 		request.setAttribute("bookings", service.retrieveBookings());
-		response.sendRedirect("/list-bookings.do");
+		String context = request.getContextPath();
+		response.sendRedirect(context + "/list-bookings.do");
 	}
 
 	

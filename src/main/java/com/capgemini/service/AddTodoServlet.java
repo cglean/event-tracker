@@ -39,8 +39,8 @@ public class AddTodoServlet extends HttpServlet {
 		System.out.println("Event Time is " + eventTime);
 		DateTimeFormatter format = DateTimeFormatter.ofPattern("yyyy-MM-dd");
 		LocalDate dateTime = LocalDate.parse(eventTime, format);
-		
+		String context = request.getContextPath();
 		todoService.addTodo(new Event(newTodo, category, dateTime));
-		response.sendRedirect("/list-todos.do");
+		response.sendRedirect(context + "/list-todos.do");
 	}
 }

@@ -3,8 +3,10 @@
 
 
 <div class="container">
+<c:set var="context" value="${pageContext.request.contextPath}" />
+
 	Your New Action Item:
-	<form method="POST" action="/add-todo.do">
+	<form method="POST" action="${context}/add-todo.do">
 		<fieldset class="form-group">
 			<label>Description</label> <input name="todo" type="text"
 				class="form-control" /> <BR />

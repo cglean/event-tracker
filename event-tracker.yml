@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: event-tracker
+  labels:
+    app: tracker
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: tracker
+  template:
+    metadata:
+      labels:
+        app: tracker
+    spec:
+      containers:
+      - name: nginx
+        image: amitb26j/event_tracker:latest
+        ports:
+        - containerPort: 8080
