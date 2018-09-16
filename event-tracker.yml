@@ -15,7 +15,7 @@ spec:
         app: tracker
     spec:
       containers:
-      - name: nginx
+      - name: tracker
         image: amitb26j/event_tracker:latest
         ports:
         - containerPort: 8080
