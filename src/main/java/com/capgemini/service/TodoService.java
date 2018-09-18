@@ -7,9 +7,9 @@ import java.util.List;
 public class TodoService {
 	private static List<Event> todos = new ArrayList<Event>();
 	static {
-		todos.add(new Event("Learn Web Application Development", "Study", LocalDate.now()));
-		todos.add(new Event("Learn Spring MVC", "Study", LocalDate.now()));
-		todos.add(new Event("Learn Spring Rest Services", "Study", LocalDate.now()));
+		todos.add(new Event("Spring Event 1", "Study", LocalDate.now()));
+		todos.add(new Event("Spring Event 2", "Study", LocalDate.now()));
+		todos.add(new Event("Spring Event 3", "Study", LocalDate.now()));
 	}
 
 	public List<Event> retrieveTodos() {
