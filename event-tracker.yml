@@ -5,7 +5,7 @@ metadata:
   labels:
     app: tracker
 spec:
-  replicas: 6
+  replicas: 1
   selector:
     matchLabels:
       app: tracker
