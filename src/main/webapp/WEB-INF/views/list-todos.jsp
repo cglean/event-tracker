@@ -3,7 +3,7 @@
 <%@ page errorPage="/WEB-INF/views/errorPage.jsp" %>  
 
 <div class="container">
-	<H1>Welcome ${name} to SpringOne 2018</H1>
+	<H1>Welcome ${name} to SpringOne 2017</H1>
 <c:set var="context" value="${pageContext.request.contextPath}" />
 
 
