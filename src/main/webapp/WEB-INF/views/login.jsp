@@ -8,7 +8,7 @@
 
     <div class="row">
         <div class="col-sm-6 col-md-4 col-md-offset-4">
-            <h1 class="text-center login-title">Sign in to continue to Event Tracker</h1>
+            <h1 class="text-center login-title">Sign in to continue to Event Tracker..Oh Not Again</h1>
             <div class="account-wall">
                 <img class="profile-img" src="Murtaza.png"  alt="">
                 <form class="form-signin" action="${context}/login.do" method="post">
