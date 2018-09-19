@@ -8,7 +8,7 @@
 	<table class="table table-striped">
 		<caption>All Bookings here</caption>
 		<thead>
-			<th>Email</th>
+			<th>Name</th>
 			<th>Description</th>
 			
 		</thead>
